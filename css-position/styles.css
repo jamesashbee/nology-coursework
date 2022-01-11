@@ -1,0 +1,28 @@
+* {
+  font-size: 40px;
+  color: white;
+  margin: 0;
+}
+
+.parent {
+  background-color: orange;
+  padding: 20px;
+  margin: 20px;
+  position: relative; /*Needs to be in here so child 1 position absolute is of the parent*/
+  height: 3000px;
+}
+
+.child-one {
+  background-color: green;
+  position: sticky;  /*Sticky Means it will initially behaive as Relative to it's parent then stay sticky once you scroll and it hits the top of the page, it will then behaive like it's Fixed.*/
+  top:0;  
+
+}
+
+.child-two {
+  background-color: purple;
+}
+
+.child-three {
+  background-color: blue;
+}
