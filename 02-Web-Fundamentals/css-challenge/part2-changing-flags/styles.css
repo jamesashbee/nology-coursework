@@ -68,10 +68,9 @@
   color: yellow;
 }
 
-
 /*Flag 1 change color when click over parent French flag to Irish Flag*/
-  
-  .flag-1-parent:active .flag-1-child-one {
+
+.flag-1-parent:active .flag-1-child-one {
   background-color: green;
   color: green;
   float: left;
@@ -98,30 +97,21 @@
   height: 100px;
 }
 
-
-
-
 /*Flag 2 change color when hover over parent german flag*/
-  
-  .flag-2-parent:hover .flag-2-child-one {
-    background-color: red;
-    color: red;
-    position: sticky; 
-    top: 0;
-  }
-    
-  .flag-2-parent:hover .flag-2-child-two {
-    background-color: white;
-    color: white;
- 
-  }
-    
-  .flag-2-parent:hover .flag-2-child-three {
-    background-color: green;
-    color: green;
- 
-  }
-    
 
+.flag-2-parent:hover .flag-2-child-one {
+  background-color: red;
+  color: red;
+  position: sticky;
+  top: 0;
+}
 
+.flag-2-parent:hover .flag-2-child-two {
+  background-color: white;
+  color: white;
+}
 
+.flag-2-parent:hover .flag-2-child-three {
+  background-color: green;
+  color: green;
+}
