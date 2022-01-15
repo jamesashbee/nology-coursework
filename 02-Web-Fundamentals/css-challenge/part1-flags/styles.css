@@ -1,0 +1,69 @@
+* {
+  font-size: 30px;
+  color: black;
+  margin: 0;
+  background-color: antiquewhite;
+}
+
+/*Had to set the font color on all div children to div color, as divs would not display on page if they had to no content at all so needed some text*/
+
+.flag-1-parent {
+  background-color: white;
+  margin: 20px;
+  position: relative; /*Needs to be in here so child 1 position absolute is of the parent*/
+  height: 100px;
+  width: 300px;
+}
+
+.flag-1-child-one {
+  background-color: blue;
+  color: blue;
+  float: left;
+  float: bottom;
+  width: 100px;
+  height: 100px;
+}
+
+.flag-1-child-two {
+  background-color: white;
+  color: white;
+  float: left;
+  float: bottom;
+  width: 100px;
+  height: 100px;
+}
+
+.flag-1-child-three {
+  background-color: red;
+  color: red;
+  float: left;
+  float: bottom;
+  width: 100px;
+  height: 100px;
+}
+
+.flag-2-parent {
+  background-color: white;
+
+  margin: 20px;
+  position: relative; /*Needs to be in here so child 2 position absolute is of the parent*/
+  height: 100px;
+  width: 300px;
+}
+
+.flag-2-child-one {
+  background-color: black;
+  color: black;
+  position: sticky; /*Sticky Means it will initially behaive as Relative to it's parent then stay sticky once you scroll and it hits the top of the page, it will then behaive like it's Fixed.*/
+  top: 0;
+}
+
+.flag-2-child-two {
+  background-color: red;
+  color: red;
+}
+
+.flag-2-child-three {
+  background-color: yellow;
+  color: yellow;
+}
