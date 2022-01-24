@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:  Tahoma,  Verdana, sans-serif;
+}
+
+*::selection{
+  /*This makes selected bits of page go white text with blue background*/
+  color: white;
+  background-color: #1182eb;
+}
+
+body{
+  background-color: white;
+  max-width: 1400px;
+  margin: auto;
+}
+
+header{
+  text-align: center;
+  height: 80px;
+  padding: 40px;
+  color: rgb(94,92,89);
+}
+
+header h1{
+  font-size: 40px;
+}
+
+#top-level{
+  padding-left: 10%;
+  padding-right: 10%;
+  /*border: solid black 2px; */
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+#mid-level{
+
+  padding-left: 10%;
+  padding-right: 10%;
+  /*border: solid black 2px; */
+  
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+
+  }
+
+#low-level{
+  padding-left: 10%;
+  padding-right: 10%;
+ /*border: solid black 2px; */
+  
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+
+}
+
+#space-1{
+  padding-left: 10%;
+  padding-right: 10%;
+ 
+
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+
+}
+
+#space-2{
+  padding-right: 30%;
+  color: black;
+
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+
+}
+
+
+.card{
+  width: 300px;
+  height: auto;
+  border: 1px solid gray;
+  border-radius: 5px;  /*Curved Corner*/
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  color: midnightblue;  /*font color*/
+  box-shadow: 5px 5px 5px 5px lightgray;  /* Right and Down, if want Left and Up use negative-*, 3rd is blur, 4th is spread of shaddow 5th is font color can use currentcolr*/
+  opacity: 0.5;  
+  transition: opacity 0.3s ease;  /*gives a sligh delay to ease in opacity*/
+}
+
+
+
+.card:hover{
+  opacity: 1;
+}
+
+.card img{
+margin: 10px;
+min-height: 300px;
+border-radius: 30px;
+}
+
+h2,h3,h4,h5,h6{
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+#penelope-list{
+  list-style-type: none;
+}
+
+li:hover{
+  color: #1182eb;
+}
+
+
+span{
+  font-size: 1.5em; /* makes font 1.5 x size of paragraph font*/
+  color: #b48ce0;
+}
