@@ -127,3 +127,11 @@ span{
   font-size: 1.5em; /* makes font 1.5 x size of paragraph font*/
   color: #b48ce0;
 }
+
+
+.vertical-line{
+  display: inline-block;
+  border-left: 1px solid #ccc;
+  margin: 0 10px;
+  height: 125px;
+}
