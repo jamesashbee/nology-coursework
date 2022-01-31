@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//Using Grid Template Areas 
+/*Give Grid-Area Properties*/
+//This then creates 6 like section variables using the grid-area name i.e. menu not nav
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: menu;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: right;
+}
+
+footer {
+  grid-area: footer;
+}
+
+// From here we use display grid
+// Grid Template area uses the 6 sections and how we want them in the 3 rows
+//i.e. iw we want the header on the top row in all 6 sections we type header 6 times on row 1
+//Seperate by "" at start and end of each row
+section {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu main main main right right"
+    "menu footer footer footer  footer footer";
+
+  gap: 10px;
+  background-color: cornflowerblue;
+  padding: 10px;
+
+  & > * {
+    //& > This Targets all within the group container section
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+}
