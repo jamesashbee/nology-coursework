@@ -1,0 +1,110 @@
+.navigation {
+  height: 10vh;
+  background-color: $color-primary;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  font-family: $font-display;
+  font-size: 20px;
+  color: $color-white;
+}
+
+.button {
+  display: block;
+  width: 100px;
+  background-color: $color-secondary;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: $color-white;
+
+  &--form {
+    width: 100%;
+    background-color: $color-primary-light;
+  }
+
+  &--thanks {
+
+background-color: unset;  //puts to white  or could use $color-white
+border: 2px solid $color-primary;
+color: $color-primary;
+
+  }
+}
+
+// intro block
+// followed by intro sub class
+
+.intro {
+  text-align: center;
+
+  &__heading {
+    //in nested child elements instead of using ".intro__heading {"  you can use "&__heading{"
+    color: $color-primary;
+    font-size: 50px;
+  }
+
+  &__sub-heading {
+    font-family: $font-display;
+    font-size: 25px;
+    margin: 20px 0;
+  }
+
+  &__button {
+    margin: 0 auto;
+  }
+}
+
+.wave {
+  vertical-align: top;
+  // this stops the gap and puts at top of section
+}
+
+.form {
+  background-color: $color-white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex; //puts into form
+  flex-direction: column; //stacks on top
+
+  &__input {
+    margin-bottom: 20px; // space under button
+  }
+}
+
+.thanks {
+  text-align: center;
+  display: flex; //puts into form
+  flex-direction: column; //stacks on top
+  align-items: center;
+
+  &__sub-heading {
+    font-family: $font-display;
+    font-size: 25px;
+    margin: 20px 0;
+  }
+
+
+}
+
+.footer {
+  color: $color-white;
+  height: 10vh;
+  background-color: $color-primary;
+  display: flex;
+  justify-content: space-between;
+padding: 20px 40px;
+
+  align-items: center;
+
+&__text{
+  color: $color-white;
+}
+
+
+
+}
